@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -9,3 +10,20 @@ spec:
     displayName: The Undream Team 
     email: teamtwo@lrsmith.dev
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: teamone 
+  description: Team One
+  links:
+    - url: https://lrsmith-dev.slack.com/channels/ABCDEFG1A
+    title: '#team-one'
+    type: slack
+    icon: chat
+spec:
+  type: team
+  children: [] 
+  profile:
+    displayName: Team One
+    email: teamone@lrsmith.dev
